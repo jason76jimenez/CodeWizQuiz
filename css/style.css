@@ -1,3 +1,19 @@
-.main h1 {
-    background-color: purple;
+/* header style */
+
+h3 {
+    color: rgb(212, 142, 212);
+}
+
+/* buttons */
+#button {
+    background-color: rgb(212, 142, 212);
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(58, 4, 58);
+}
+footer h4 {
+    color:white;
 }
