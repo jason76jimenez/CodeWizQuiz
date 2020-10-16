@@ -1,12 +1,24 @@
 /* header style */
 
+header {
+    display: inline;
+}
+
+.timer {
+    text-align: right;
+}
 h3 {
     color: rgb(212, 142, 212);
 }
 
 /* buttons */
 #button {
-    background-color: rgb(212, 142, 212);
+    background-color: rgb(58, 4,58);
+    color: white;
+}
+.answer {
+    border-top: solid grey;
+    font-weight: lighter;
 }
 
 /* footer */
@@ -16,4 +28,8 @@ footer {
 }
 footer h4 {
     color:white;
+    text-align: right;
+}
+.portfolio {
+    background-color: rgb(212, 142, 212);
 }
