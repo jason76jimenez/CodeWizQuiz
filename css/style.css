@@ -1,27 +1,46 @@
+* ::before, * ::after {
+    box-sizing: border-box;
+    align-items: center;
+}
 /* header style */
 
 header {
     display: inline;
 }
 
-.timer {
+.timer-container {
     text-align: right;
+    font-weight: bolder;
 }
 h3 {
     color: rgb(212, 142, 212);
 }
+/* Header ends */
 
-/* buttons */
-#button {
-    background-color: rgb(58, 4,58);
+/* Quiz portion */
+
+#btn, #btns, #start {
+    background-color: rgb(58, 4, 58);
     color: white;
+    border: solid;
+    height: 30px;
+    width: 125px;
+    border-radius: 10px;
+    border-spacing: 5px;
+}
+.hide {
+    visibility: hidden;
+}
+.reveal {
+    visibility: visible;
 }
 .answer {
     border-top: solid grey;
     font-weight: lighter;
 }
+/* Quiz ends */
 
-/* footer */
+/* Footer */
 
 footer {
     background-color: rgb(58, 4, 58);

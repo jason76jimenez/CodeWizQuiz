@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CodeWizQuiz</title>
     <link rel= "stylesheet" href="css/style.css">
-
 </head>
+
 <!-- body of quiz -->
 <body>
     <header>
-        <h3>View high scores</h3>
-        <h4 class="timer">Timer Goes Here</h4>
+        <h3 id = 'score'>View high scores</h3>
+        <div class= 'timer-container'>
+        <div class='clock'><span id="timer">Time</span></div>
+        </div>
     </header>
 
-    <main>
-        <h1>Test goes here</h1>
-        <p class="question">quiz question goes here</p>
-        <button id= "button" class="buttonA">A</button><br />
-        <button id= "button" class="buttonB">B</button><br />
-        <button id= "button" class="buttonC">C</button><br />
-        <button id= "button" class="buttonD">D</button><br />
-        <p class="answer">prompt here either wrong or correct</p>
+    <main id = "wrapper">
+        <div id= "question" class= 'hide'>quiz question goes here</div>
+        <br/>
+        <button id= 'start' onclick= 'startTimer'>Start Quiz</button>
+    
+        <div class= "box">
+            <button id= "btn" class="btnA">A</button><br />
+            <button id= "btn" class="btnB">B</button><br />
+            <button id= "btn" class="btnC">C</button><br />
+            <button id= "btn" class="btnD">D</button><br />
+        </div>
+        <br/>
+        <button id= "btns">Next!</button>
+
+        <p class="answer">
+            prompt here either wrong or correct
+        </p>
+
     </main>
 
+
+    <!-- Footer contact info :) -->
     <footer>
         <a class="portfolio" href="https://jason76jimenez.github.io/portfolio-v2/">Contact</a>
         <h4>&#174 Created by lyfeStyle Development</h4>
     </footer>
 
     <script src="quiz.js"></script>
-
-
-
-
-  
-    
-
-
-
-
-
 
 </body>
 </html>
