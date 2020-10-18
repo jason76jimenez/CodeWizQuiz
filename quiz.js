@@ -33,9 +33,12 @@ function start() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function startQuiz() {
     alert("first question")
     console.log("debug");
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 
