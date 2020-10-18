@@ -29,7 +29,7 @@ function start() {
 
 function startQuiz() {
     alert("first question")
-    console.log("debug")
+    console.log("debug");
 
 }
 
@@ -55,7 +55,7 @@ function displayMessage() {
       mainEl.textContent = words[wordCount];
       wordCount++;
     }
-  }, 300);
+  }, 1000);
 }
 
 startBtn.onclick = start; //This is the onclick command
