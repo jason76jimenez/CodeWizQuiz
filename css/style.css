@@ -18,8 +18,10 @@ h3 {
 /* Header ends */
 
 /* Quiz portion */
-
-#btn, #btns, #start {
+#intro {
+    text-align: center;
+}
+#btn, #start {
     background-color: rgb(58, 4, 58);
     color: white;
     border: solid;

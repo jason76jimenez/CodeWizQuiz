@@ -1,7 +1,10 @@
 var timerEl = document.getElementById("timer");
-var mainEl = document.getElementById('question');
+var mainEl = document.getElementById('intro');
 var startBtn = document.getElementById('start');
 var questionBtn = document.getElementById("question");
+var option = document.getElementsByClassName("btnA");
+
+
 //alert("Welcome! FYI, wrong answers deduct 10 seconds from time!")
 
 var message =
@@ -28,19 +31,11 @@ function start() {
     //
     
         if (timerEl){
-        questionBtn.textContent = "first question"
-        console.log("now");}
+        intro.textContent = "first question"
+        console.log("now");
+        }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-function startQuiz() {
-    alert("first question")
-    console.log("debug");
-=======
->>>>>>> develop
-=======
->>>>>>> develop
 
 
   }
@@ -58,7 +53,7 @@ function startQuiz() {
 
 // Displays the message one word at a time
 function displayMessage() {
-  var wordCount = 0;
+  var wordCount = 2;
 
   // Uses the `setInterval()` method to call a function to be executed every 300 milliseconds
   var msgInterval = setInterval(function() {
@@ -68,7 +63,10 @@ function displayMessage() {
       mainEl.textContent = words[wordCount];
       wordCount++;
     }
-  }, 1000);
+  }, 300);
 }
+document.getElementById("box").style.alignItems="flex-center";
+console.log(box);
+
 
 startBtn.onclick = start; //This is the onclick command
