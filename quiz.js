@@ -1,17 +1,19 @@
 var timerEl = document.getElementById("timer");
-var mainEl = document.getElementById('intro');
+var mainEl = document.getElementById('qQ');
 var startBtn = document.getElementById('start');
-var questionBtn = document.getElementById("question");
-var option = document.getElementsByClassName("btnA");
+//var btnD = document.getElementsByClassName("btnD");
+var hide= document.getElementById("hide");
+var answer= document.getElementById("answer");
+var box= document.getElementById("box");
 
+//some style commands
+answer.style.display = ("none");
 
-//alert("Welcome! FYI, wrong answers deduct 10 seconds from time!")
-
+//message when times up
 var message =
-  'Congratulations! Now you are prepared to tackle the Challenge this week! Good luck!';
-var words = message.split(' ');
+  "Times up!";
 
-// Timer
+// Timer start function
 function start() {
   var timeLeft = 300; //this is the timer time parameter
   var timeInterval = setInterval(function() {
@@ -28,12 +30,23 @@ function start() {
       }
       timeLeft -- //displays the time continuously
     }, 1000);  //this function read every 1 sec.
-    //
-    
-        if (timerEl){
-        intro.textContent = "first question"
-        console.log("now");
+
+    // start btn and notification disappear on start boxes appear
+        if (start){
+            hide.style.display = "none";
+            startBtn.style.display = "none";
+            box.style.display = "block";
         }
+    // questions start
+    var btnD = document.getElementsByClassName("btnD");
+            mainEl.textContent= "Commonly used data types DO NOT include:"
+            btnD.textContent="booleans"
+            console.log("working");
+                
+        
+    
+
+
 
 
 
@@ -65,8 +78,5 @@ function displayMessage() {
     }
   }, 300);
 }
-document.getElementById("box").style.alignItems="flex-center";
-console.log(box);
-
 
 startBtn.onclick = start; //This is the onclick command
